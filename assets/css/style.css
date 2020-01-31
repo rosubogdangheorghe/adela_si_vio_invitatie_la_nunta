@@ -6,7 +6,7 @@
 }*/
 
 body {
-	background-image: url(../images/background3.jpg);
+	background-image: url(../images/background2.jpg);
 	background-position: center top;
   	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -16,25 +16,35 @@ body {
 	
 	}
 	
+ @media (max-width:768px){
+	body {
+	background-image: url("../images/backgroundsmall.jpg");
+	background-position: center top;
+  	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-size: cover;
+	width:100%;
+	height: auto;
+	}
+}
 
 	.principal {
 	width: 90%;	
-	margin-left: auto;
-    margin-right: auto;
 	text-align: center;
 	padding: 10px;
 	font-family: 'Vesper Libre', serif;
 	font-size: 4vw;
 	color:rgb(95, 59, 34);
+	margin-left: auto;
+    margin-right: auto;
 }
 		
 	
 
 #miri,#fiica {
     font-family: 'Ruthie', cursive;
-    color: rgb(92, 92, 83);
     font-size: 8vw;
-    text-shadow: 1px 1px rgba(19,18,18,1.00);	
+    color: rgba(64,64,49,1.00);   /*text-shadow: 1px 1px rgba(233,218,185,1.00);*/
 }
 
 .ziua,.luna,.anul {
@@ -69,19 +79,14 @@ body {
 	
 }
 
-.separator,.map {
+img {
   max-width: 14vw;
+  position: absolute;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   
 }
-.separator {
-	opacity: 0.2;
-	filter: alpha(opacity=20);
-	
-}
-
 span {
 	text-transform: uppercase;
 }
